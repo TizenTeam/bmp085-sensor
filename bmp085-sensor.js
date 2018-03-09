@@ -9,12 +9,25 @@ var i2c = require('i2c');
 module.exports = function BMP085(options) {
   var sensor = function() {};
   options = options || {
+    bus: 1,
+    device: '/dev/i2c-1',
     address: 0x77,
     mode: 0,
     units: 'metric'
   };
   options.address = options.address || 0x77;
-  var wire = new i2c(options.address);
+  var wire = i2c.openSync(options);
+  wire.writeBytes = function(offset, bytes, callback) {
+    var bytes = [offset].concat(bytes);
+    this.writeSync(bytes);
+    callback(null);
+  }
+  wire.readBytes = function(offset, len, callback) {
+    this.writeSync([offset]);
+    this.read(len, function(err, res) {
+      callback(err, res);
+    });
+  }
   var cal = {};
 
   var BMP085_CONTROL_REGISTER  = 0xF4;

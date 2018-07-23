@@ -54,3 +54,9 @@ sensor.calibrate(function (err, data) {
   });                                                                                                                                                                                                                                                                          
 });
 ```
+
+### Resources
+
+* https://www.npmjs.com/package/bmp085-sensor
+* https://github.com/dbridges/bmp085-sensor
+* https://www.openhub.net/p/bmp085-sensor

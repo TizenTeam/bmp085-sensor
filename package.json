@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      "bmp085-sensor",
+      "/local/home/philippe/var/cache/url/git/ssh/github.com/tizenteam/bmp085-sensor/src"
+    ],
+    [
+      "bmp085-sensor",
+      "/local/home/philippe/var/cache/url/git/ssh/github.com/tizenteam/bmp085-sensor/src/bmp085-sensor"
+    ]
+  ],
+  "_from": "bmp085-sensor@latest",
+  "_id": "bmp085-sensor@0.0.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/bmp085-sensor",
+  "_npmUser": {
+    "email": "bridges2@gmail.com",
+    "name": "dbridges"
+  },
+  "_npmVersion": "1.3.21",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": null,
+    "raw": "bmp085-sensor",
+    "rawSpec": "bmp085-sensor",
+    "scope": null,
+    "spec": "/local/home/philippe/var/cache/url/git/ssh/github.com/tizenteam/bmp085-sensor/src/bmp085-sensor",
+    "type": "directory"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/bmp085-sensor/-/bmp085-sensor-0.0.4.tgz",
+  "_shasum": "896338a718629333462f07119ff0e8d4f92421ac",
+  "_shrinkwrap": null,
+  "_spec": "bmp085-sensor",
+  "_where": "/local/home/philippe/var/cache/url/git/ssh/github.com/tizenteam/bmp085-sensor/src",
+  "author": {
+    "name": "Daniel Bridges"
+  },
+  "bugs": {
+    "url": "https://github.com/dbridges/bmp085/issues"
+  },
+  "dependencies": {
+    "async": "~0.2.9",
+    "i2c": "*"
+  },
+  "description": "A module to interface a BMP085 temperature and pressure sensor to the raspberry pi.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "896338a718629333462f07119ff0e8d4f92421ac",
+    "tarball": "https://registry.npmjs.org/bmp085-sensor/-/bmp085-sensor-0.0.4.tgz"
+  },
+  "gitHead": "f83d56d351fc90a0626947b087228e6104a62f54",
+  "homepage": "https://github.com/dbridges/bmp085",
+  "keywords": [
+    "bmp085",
+    "i2c",
+    "pi",
+    "raspberry"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "dbridges",
+      "email": "bridges2@gmail.com"
+    }
+  ],
+  "name": "bmp085-sensor",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbridges/bmp085.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.4"
+}

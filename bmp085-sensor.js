@@ -1,4 +1,9 @@
-var async = require('async');
+var async;
+try {
+  async = require('async');
+} catch (err) {
+  async = require('iotjs/async/index.js');
+}
 var i2c = require('i2c');
 
 module.exports = function BMP085(options) {
